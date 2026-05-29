@@ -1,0 +1,14 @@
+[mgr]
+prepend_keymap = [
+  # --- Restore Plugin Bindings ---
+  { on = "u",       run = "plugin restore", desc = "Restore last deleted files/folders" },
+  
+  # Interactive restore (Will error if file/folder exists)
+  { on = "U", run = "plugin restore -- --interactive", desc = "Restore deleted files/folders (Interactive)" },
+  
+  # --- Mount Plugin Binding ---
+  { on = "M",       run = "plugin mount", desc = "Mount drive/device" },
+
+  # --- Recycle Bin Plugin Binding ---
+  { on = "R", run = "plugin recycle-bin", desc = "Open Recycle Bin menu" }
+]

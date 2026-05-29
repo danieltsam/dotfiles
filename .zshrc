@@ -1,4 +1,5 @@
-
+export PATH="/opt/homebrew/bin:$PATH"
+export PATH="/opt/homebrew/opt/trash-cli/bin:$PATH"
 eval "$(zoxide init zsh)"
 
 alias onvim="fd --type f --hidden --exclude .git | fzf --height 30% --preview 'cat {1}' | xargs nvim"
